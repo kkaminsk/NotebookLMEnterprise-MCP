@@ -1,0 +1,45 @@
+{
+  "name": "notebooklm-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for Google Cloud NotebookLM Enterprise API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "notebooklm-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src"
+  },
+  "keywords": [
+    "mcp",
+    "notebooklm",
+    "google-cloud",
+    "ai",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/discoveryengine": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "google-auth-library": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
